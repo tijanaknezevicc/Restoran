@@ -8,6 +8,10 @@ namespace Restoran
 {
     internal static class Program
     {
+        static public string userIme = "";
+        static public string userPrezime = "";
+        static public int userID = 0;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +20,7 @@ namespace Restoran
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormLogin());
         }
     }
 }
