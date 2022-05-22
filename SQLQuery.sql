@@ -36,6 +36,14 @@ select rezervacija.id, gost.ime + ' ' + gost.prezime as gost, sto.kapacitet as '
 from rezervacija join gost on gost.id = gostID join sto on sto.id = stoID join termin on termin.id = terminID
 where gostID = 2
 
+insert into termin (datum, vreme)
+values ('2022/12/11', '20:30')
+
+select * from termin
+
+insert into rezervacija (gostID, stoID, terminID)
+values (1, 7, 8)
+
 delete from rezervacija where id = 5
 
 select * from rezervacija
