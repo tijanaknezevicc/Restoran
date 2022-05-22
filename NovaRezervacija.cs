@@ -63,7 +63,7 @@ namespace Restoran
             int terminID = (int)termini.Rows[termini.Rows.Count - 1]["id"]; 
 
             string naredba = $"insert into rezervacija (gostID, stoID, terminID) values({Program.userID}, {(int)comboBoxBrojGostiju.SelectedIndex + 1}, {terminID})";
-            MessageBox.Show(naredba);
+            //MessageBox.Show(naredba);
 
             //SqlConnection veza = konekcija.connect();
             komanda = new SqlCommand(naredba, veza);
